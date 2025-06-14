@@ -71,4 +71,43 @@ section {
   display: none;
 }
 
+.certifications {
+  padding: 5rem 2rem;
+  background: var(--snd-bg-color);
+  text-align: center;
+}
+
+.cert-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cert-box {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.cert-box:hover {
+  transform: scale(1.05);
+}
+
+.cert-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.cert-box p {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
 /* (rest of the styles remain same — truncated for brevity) */
