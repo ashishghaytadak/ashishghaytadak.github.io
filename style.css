@@ -72,7 +72,7 @@ section {
 }
 
 .certifications {
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
   background: var(--snd-bg-color);
   text-align: center;
 }
@@ -82,32 +82,38 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .cert-box {
-  background: #fff;
+  background: #ffffff;
   border-radius: 1.5rem;
-  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  max-width: 250px;
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cert-box:hover {
-  transform: scale(1.05);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .cert-box img {
   width: 100%;
   height: auto;
-  border-radius: 1rem;
+  max-height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
 
 .cert-box p {
-  margin-top: 1rem;
-  font-weight: bold;
-  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #000;
+  line-height: 1.4;
 }
+
 
 /* (rest of the styles remain same — truncated for brevity) */
