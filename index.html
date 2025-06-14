@@ -121,17 +121,21 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-    <form name="submit-to-google-sheet">
-      <div class="input-box">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-      </div>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <input type="submit" value="Send Message" class="btn">
-    </form>
-  </section>
+ <section id="contact" class="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form name="submit-to-google-sheet">
+    <div class="input-box">
+      <input type="text" name="first-name" placeholder="FullName" required>
+      <input type="text" name="last-name" placeholder="LastName" required>
+    </div>
+    <div class="input-box">
+      <input type="text" name="subject" placeholder="Email Subject" required>
+      <input type="tel" name="mobile" placeholder="Mobile Number" required>
+    </div>
+    <textarea name="message" rows="8" placeholder="Your message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
 
   <footer class="footer">
     <div class="footer-text">
