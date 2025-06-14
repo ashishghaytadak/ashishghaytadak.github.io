@@ -6,87 +6,13 @@
   <title>Ashish Ghaytadak | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.6;
-      background: #f4f4f4;
-      color: #333;
-    }
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px 0;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 20px 0;
-    }
-    header h1 {
-      text-align: center;
-      font-size: 2rem;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      margin-top: 10px;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .hero {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      text-align: center;
-      padding: 60px 0;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-    }
-    section {
-      padding: 40px 0;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #0f2027;
-    }
-    .project {
-      background: white;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-    }
-    a {
-      color: #0077cc;
-    }
-  </style>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <div class="container">
       <h1>Ashish Ghaytadak</h1>
-      <nav>
+      <nav class="navbar">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -94,13 +20,14 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <i id="menu-icon" class="fas fa-bars"></i>
     </div>
   </header>
 
   <section id="home" class="hero">
     <div class="container">
       <h2>Hi, I’m Ashish 👋</h2>
-      <p>Master’s in Information Systems | Aspiring Data Analyst</p>
+      <p><span class="multiple-text"></span></p>
     </div>
   </section>
 
@@ -128,7 +55,13 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <p>Email: asghayta@syr.edu</p>
+      <form name="submit-to-google-sheet">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p>Email: ashish.ghaytadak@example.com</p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/ashishghaytadak">ashishghaytadak</a></p>
     </div>
   </section>
@@ -138,5 +71,9 @@
       <p>&copy; 2025 Ashish Ghaytadak</p>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
