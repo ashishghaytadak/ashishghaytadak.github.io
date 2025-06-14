@@ -48,13 +48,13 @@ ScrollReveal().reveal('.about-img', { origin: 'left' });
 ScrollReveal().reveal('.about-content', { origin: 'right' });
 
 // Typed.js animation
-const typed = new Typed('.multiple-text', {
-    strings: ['a Software Engineer', 'a Data Analyst', 'a Salesforce Developer', 'a Web Designer', 'an Innovator'],
-    typeSpeed: 70,
-    backSpeed: 70,
-    backDelay: 1000,
-    loop: true,
-});
+
+const typed = new Typed(".multiple-text", {
+    strings: ["a Salesforce Developer", "a Data Analyst", "a Business Analyst", "a Business Intelligence Analyst"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+  });
 
 // Google Sheets form submission
 const scriptURL = 'https://script.google.com/macros/s/AKfycbx4O-4eDCShExgtQPuRAL2kPF92Z_tfIfr-irqQoZV0M-WpqdxU2rBVd25rAD8cwv-q/exec';
