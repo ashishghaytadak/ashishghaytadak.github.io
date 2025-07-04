@@ -120,11 +120,10 @@ section {
 }
 
 .Profile-img img {
-  width: 100%;
-  max-width: 200px;
+  width: 250px;
   height: auto;
   border-radius: 15px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 
