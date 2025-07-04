@@ -121,7 +121,7 @@ section {
 
 .Profile-img img {
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   height: auto;
   border-radius: 15px;
   object-fit: contain;
