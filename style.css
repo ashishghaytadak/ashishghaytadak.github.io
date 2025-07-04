@@ -120,7 +120,7 @@ section {
 }
 
 .Profile-img img {
-  width: 80%;           /* take up 80% of the container */
+  width: 100%;           /* take up 80% of the container */
   max-width: 300px;     /* but never bigger than 300px */
   height: auto;
   border-radius: 15px;  /* rounded corners */
