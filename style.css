@@ -115,5 +115,17 @@ section {
   line-height: 1.4;
 }
 
+.Profile-img {
+  text-align: center;
+}
+
+.Profile-img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: contain;
+}
+
 
 /* (rest of the styles remain same — truncated for brevity) */
