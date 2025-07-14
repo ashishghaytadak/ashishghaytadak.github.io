@@ -126,6 +126,39 @@ section {
   border-radius: 15px;  /* rounded corners */
   object-fit: cover;
 }
+.experience-box {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #121212; /* dark mode friendly */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.experience-box h3 {
+  font-size: 1.2rem;
+  color: #00bcd4;
+  margin-bottom: 0.5rem;
+}
+
+.experience-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: #eee;
+}
+
+.experience-list .icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: #ffd700; /* gold icons */
+}
 
 
 /* (rest of the styles remain same — truncated for brevity) */
