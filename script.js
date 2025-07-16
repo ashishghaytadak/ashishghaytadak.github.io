@@ -75,10 +75,10 @@ function clearField() {
 
 // Contact
 function doPost(e) {
-  // Get the active sheet
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-
-     // Get the sheet by name or get first sheet
+   // Open spreadsheet by ID
+  var ss = SpreadsheetApp.openById('https://docs.google.com/spreadsheets/d/1sU9_18d3UkaASXGY89UNK4x608pA4y9d5qM_DDEoqPE/edit?usp=sharing');
+  
+  // Get the sheet by name
   var sheet = ss.getSheetByName('Sheet1');  // or ss.getSheets()[0]
   
 
