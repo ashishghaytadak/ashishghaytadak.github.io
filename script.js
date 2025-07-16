@@ -74,6 +74,10 @@ function clearField() {
 }
 
 // Contact
+function doGet(e) {
+  return ContentService.createTextOutput("This web app only accepts POST requests.");
+}
+
 function doPost(e) {
    // Open spreadsheet by ID
   var ss = SpreadsheetApp.openById('https://docs.google.com/spreadsheets/d/1sU9_18d3UkaASXGY89UNK4x608pA4y9d5qM_DDEoqPE/edit?usp=sharing');
