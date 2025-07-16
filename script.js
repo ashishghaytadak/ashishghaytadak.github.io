@@ -57,7 +57,7 @@ const typed = new Typed(".multiple-text", {
   });
 
 // Google Sheets form submission
-const scriptURL = 'https://script.google.com/macros/s/AKfycbx4O-4eDCShExgtQPuRAL2kPF92Z_tfIfr-irqQoZV0M-WpqdxU2rBVd25rAD8cwv-q/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyhMws1qnaRsgGbXx3i3Sn5y-WM8aaAxCK6WX1XdUXGsUMTiUlbdHhVq90z5zmf8Ynh/exec';
 const form = document.forms['submit-to-google-sheet'];
 
 form.addEventListener('submit', e => {
@@ -71,4 +71,44 @@ form.addEventListener('submit', e => {
 // Clear input fields (if needed in the future)
 function clearField() {
     document.querySelectorAll('.input-').forEach(field => field.value = '');
+}
+
+// Contact
+function doPost(e) {
+  // Get the active sheet
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+
+  // Get form fields from request
+  var firstName = e.parameter['first-name'];
+  var lastName = e.parameter['last-name'];
+  var subject = e.parameter['subject'];
+  var mobile = e.parameter['mobile'];
+  var message = e.parameter['message'];
+
+  // Save to Google Sheet
+  sheet.appendRow([
+    new Date(),
+    firstName,
+    lastName,
+    subject,
+    mobile,
+    message
+  ]);
+
+  // Send Email
+  var emailTo = "ashishghaytadak@gmail.com"; // 🔷 Replace with your email
+  var emailSubject = "New Contact Form Submission: " + subject;
+  var emailBody =
+    "You received a new message via your portfolio contact form:\n\n" +
+    "Full Name: " + firstName + " " + lastName + "\n" +
+    "Mobile: " + mobile + "\n" +
+    "Subject: " + subject + "\n" +
+    "Message:\n" + message + "\n\n" +
+    "Time: " + new Date();
+
+  MailApp.sendEmail(emailTo, emailSubject, emailBody);
+
+  return ContentService
+           .createTextOutput("Success")
+           .setMimeType(ContentService.MimeType.TEXT);
 }
