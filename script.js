@@ -78,6 +78,10 @@ function doPost(e) {
   // Get the active sheet
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
+     // Get the sheet by name or get first sheet
+  var sheet = ss.getSheetByName('Sheet1');  // or ss.getSheets()[0]
+  
+
   // Get form fields from request
   var firstName = e.parameter['first-name'];
   var lastName = e.parameter['last-name'];
