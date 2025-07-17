@@ -64,6 +64,13 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => console.log('Success!', response))
+        .then(text => {
+            console.log('Success!', text);
+            messageEl.textContent = "Submitted successfully!";
+            messageEl.style.color = "green";
+            form.reset();
+            setTimeout(() => messageEl.textContent = "", 5000);
+        })
         .then(() => form.reset())
         .catch(error => console.error('Error!', error.message));
 });
