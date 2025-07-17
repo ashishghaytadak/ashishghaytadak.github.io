@@ -80,7 +80,7 @@ function doGet(e) {
 
 function doPost(e) {
    // Open spreadsheet by ID
-  var ss = SpreadsheetApp.openById('https://docs.google.com/spreadsheets/d/1sU9_18d3UkaASXGY89UNK4x608pA4y9d5qM_DDEoqPE/edit?usp=sharing');
+  var ss = SpreadsheetApp.openById('1sU9_18d3UkaASXGY89UNK4x608pA4y9d5qM_DDEoqPE');
   
   // Get the sheet by name
   var sheet = ss.getSheetByName('Sheet1');  // or ss.getSheets()[0]
