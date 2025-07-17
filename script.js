@@ -57,7 +57,7 @@ const typed = new Typed(".multiple-text", {
   });
 
 // Google Sheets form submission
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxRN9lRSmja-rs7NrHKwMa_rCniVFS2-8fPPtN4VnH2JV2aswoGiTEGI-OwLarQu9gO/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxddeY2G51mDM-Ce3IJ_gquo157rh2TGydb_qYnzNZBgmkeXINa0Y00pK957c2s364P/exec';
 const form = document.forms['submit-to-google-sheet'];
 
 form.addEventListener('submit', e => {
