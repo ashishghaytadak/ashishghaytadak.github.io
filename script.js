@@ -67,7 +67,7 @@ form.addEventListener('submit', e => {
         .then(text => {
             console.log('Success!', text);
             messageEl.textContent = "Submitted successfully!";
-            messageEl.style.color = "green";
+            messageEl.style.color = "white";
             form.reset();
             setTimeout(() => messageEl.textContent = "", 5000);
         })
