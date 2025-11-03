@@ -175,9 +175,9 @@ if (form) {
                     messageEl.style.color = "#00d4ff";
                 }
                 form.reset();
-                
+                 
                 // Reset button
-                if (btnText) {
+                if (btnText) { 
                     btnText.textContent = originalText;
                 }
                 submitBtn.style.opacity = '1';
