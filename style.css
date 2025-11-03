@@ -401,6 +401,8 @@ body {
   border: 5px solid var(--main-color);
   box-shadow: 0 0 50px rgba(0, 212, 255, 0.5);
   animation: profileFloat 3s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
 }
 
 @keyframes profileFloat {
@@ -430,6 +432,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .float-icon {
@@ -450,6 +453,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(var(--x), var(--y));
+  z-index: 1;
 }
 
 @keyframes floatIcon {
@@ -1150,7 +1154,7 @@ section {
   margin-bottom: 0.5rem;
 }
 
-.contact-method p { 
+.contact-method p {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.7);
   margin: 0;
