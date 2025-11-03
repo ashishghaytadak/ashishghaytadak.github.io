@@ -3,319 +3,694 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashish Ghaytadak | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-
-   <!--Main CSS-->
-    <link rel="stylesheet" href="style.css">
-  
-  <script defer src="script.js"></script>
+  <title>Ashish Ghaytadak | Data Analyst & Salesforce Developer</title>
+  <link rel="stylesheet" href="enhanced-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+  <!-- Animated Background -->
+  <div class="animated-background">
+    <div class="gradient-sphere sphere-1"></div>
+    <div class="gradient-sphere sphere-2"></div>
+    <div class="gradient-sphere sphere-3"></div>
+  </div>
+
+  <!-- Header with Glassmorphism -->
   <header class="header">
-    <a href="#" class="logo">Portfolio</a>
+    <a href="#" class="logo">
+      <span class="logo-bracket">&lt;</span>
+      Ashish
+      <span class="logo-bracket">/&gt;</span>
+    </a>
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#trailblazer">Trailblazer</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
     <i id="menu-icon" class="fas fa-bars"></i>
   </header>
 
- <section id="home" class="home">
-  <div class="home-content">
-    <h3>Hi, Myself</h3>
-    <h1>Ashish Ghaytadak</h1>
-    <h3>I am <span class="multiple-text">a Salesforce Developer </span></h3> 
-    <h4>MSIS Graduate Student at Syracuse University 2024 – 2026</h4>
-    <p>Passionate Master's student ready to turn academic knowledge into practical skills, eager to join industry projects, collaborate with experienced professionals, and leave a lasting imprint on the tech world through innovation and teamwork.</p>
-    <div class="social-media">
-        <a href="ashishghaytadak@gmail.com"><i class="fa-brands fa-google"></i></a>
-        <a href="https://www.linkedin.com/in/ashishghaytadak"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/ashishghaytadak><i class="fa-brands fa-github"></i></a>
-    </div>
-    
-    <a href="SE Resume.docx" class="btn" download>Download Salesforce Resume</a>
-  </div>
-  <div class="Profile-img">
-    <img src="Ash3.jpg" alt="Ashish Ghaytadak">
-  </div>
-</section>
+  <!-- Hero Section with Enhanced Design -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <div class="text-reveal">
+        <h3 class="greeting">Hi, I'm</h3>
+        <h1 class="name-title">Ashish Ghaytadak</h1>
+        <h3 class="role-container">
+          <span class="static-text">I'm </span>
+          <span class="multiple-text"></span>
+        </h3>
+        <div class="education-badge">
+          <i class="fas fa-graduation-cap"></i>
+          MSIS @ Syracuse University | 2024 – 2026
+        </div>
+      </div>
+      
+      <p class="hero-description">
+        Transforming raw data into actionable insights. Former Salesforce Developer at Accenture 
+        with a passion for building intelligent solutions that drive business impact through analytics, 
+        automation, and innovation.
+      </p>
 
+      <div class="stats-container">
+        <div class="stat-box">
+          <h4 class="stat-number" data-target="3">0</h4>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-box">
+          <h4 class="stat-number" data-target="15">0</h4>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-box">
+          <h4 class="stat-number" data-target="5">0</h4>
+          <p>Certifications</p>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <a href="mailto:ashishghaytadak@gmail.com" class="social-icon">
+          <i class="fa-brands fa-google"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ashishghaytadak" target="_blank" class="social-icon">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ashishghaytadak" target="_blank" class="social-icon">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://salesforce.com/trailblazer/aghaytadak" target="_blank" class="social-icon">
+          <i class="fab fa-salesforce"></i>
+        </a>
+      </div>
+      
+      <div class="cta-buttons">
+        <a href="SE Resume.docx" class="btn btn-primary" download>
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-envelope"></i> Get in Touch
+        </a>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <div class="profile-card">
+        <div class="profile-img-container">
+          <img src="Ash3.jpg" alt="Ashish Ghaytadak" class="profile-img">
+          <div class="profile-ring"></div>
+        </div>
+        <div class="floating-icons">
+          <div class="float-icon" style="--delay: 0s; --x: -30px; --y: -40px;">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="float-icon" style="--delay: 0.5s; --x: 30px; --y: -30px;">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="float-icon" style="--delay: 1s; --x: -35px; --y: 30px;">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="float-icon" style="--delay: 1.5s; --x: 35px; --y: 35px;">
+            <i class="fab fa-salesforce"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section with Timeline -->
   <section id="about" class="about">
-    <div class="Profile-img">
-      <img src="Profile-img" alt="Profile">
-    </div>
-    <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Full-Stack Enthusiast</h3>
-      <p>Every number tells a story — and I help bring those stories to life.
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-container">
+      <div class="about-image">
+        <div class="image-wrapper">
+          <img src="Ash3.jpg" alt="About Me">
+          <div class="overlay-pattern"></div>
+        </div>
+      </div>
+      <div class="about-content">
+        <h3 class="subtitle">Data-Driven Problem Solver</h3>
+        <p class="about-text">
+          Every number tells a story — and I help bring those stories to life.
+        </p>
+        <p class="about-text">
+          I'm Ashish Ghaytadak, an Information Systems graduate student at Syracuse University 
+          and a former Salesforce Developer at Accenture. Over the years, I've built dashboards 
+          that help sales teams close more deals, designed databases that make businesses run 
+          smoother, and forecasted power demand to keep the lights on during extreme weather.
+        </p>
+        <p class="about-text">
+          I believe in the power of data to inform decisions, inspire action, and create impact. 
+          Whether it's through Python, SQL, Tableau, or Salesforce Lightning, I love crafting 
+          solutions that make sense of complexity and empower people.
+        </p>
+        
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-trophy"></i>
+            <div>
+              <h4>Ranger Status</h4>
+              <p>Salesforce Trailblazer</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-brain"></i>
+            <div>
+              <h4>ML Enthusiast</h4>
+              <p>Applied Machine Learning</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-code"></i>
+            <div>
+              <h4>Full-Stack Dev</h4>
+              <p>End-to-End Solutions</p>
+            </div>
+          </div>
+        </div>
 
-I’m Ashish Ghaytadak, an Information Systems grad student at Syracuse University and a former Salesforce Developer at Accenture. Over the years, I’ve built dashboards that help sales teams close more deals, designed databases that make businesses run smoother, and even forecasted power demand to keep the lights on during extreme weather.
-
-I believe in the power of data to inform decisions, inspire action, and create impact. Whether it’s through Python, SQL, Tableau, or Salesforce Lightning, I love crafting solutions that make sense of complexity and empower people.
-
-Outside of coding and analytics, I enjoy learning new things, playing games that challenge my mind, and sharing insights that spark better conversations.
-
-Let’s create something meaningful — one dataset at a time.</p>
-      <a href="#projects" class="btn">Explore My Work</a>
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> Explore My Work
+        </a>
+      </div>
     </div>
   </section>
 
- <section id="experience" class="experience">
-  <h2 class="heading">My <span>Experience</span></h2>
-  <div class="experience-container">
+  <!-- Skills Section with Animated Bars -->
+  <section id="skills" class="skills">
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+    <div class="skills-container">
+      
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-code"></i> Programming & Analysis
+        </h3>
+        <div class="skill-items">
+          <div class="skill-item" data-progress="95">
+            <div class="skill-info">
+              <span>Python (Pandas, NumPy, scikit-learn)</span>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-progress="90">
+            <div class="skill-info">
+              <span>SQL / Database Design</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-progress="85">
+            <div class="skill-info">
+              <span>R (dplyr, ggplot2, Shiny)</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-progress="80">
+            <div class="skill-info">
+              <span>Apex / Salesforce Development</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="experience-box">
-      <i class="fas fa-laptop-code"></i>
-      <h3>Salesforce Developer | Accenture, Pune, India | Oct 2021 – Apr 2024</h3>
-      <ul class="experience-list">
-        <li><span class="icon">🚀</span> <strong>Efficiency :</strong> Automated workflows & reporting → 40% time saved</li>
-        <li><span class="icon">📊</span> <strong>Insights :</strong> Built dashboards & KPIs → 15% more deals closed</li>
-        <li><span class="icon">🔗</span> <strong>Data Migration :</strong> 50K+ records moved with 99% accuracy</li>
-        <li><span class="icon">⚡</span> <strong>User Experience :</strong> Apex & custom Lightning Web Components (LWC) → modern UI for 500+ users</li>
-      </ul>
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-chart-pie"></i> Data Visualization & BI
+        </h3>
+        <div class="skill-items">
+          <div class="skill-item" data-progress="92">
+            <div class="skill-info">
+              <span>Tableau Desktop & Server</span>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-progress="88">
+            <div class="skill-info">
+              <span>Power BI</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-progress="85">
+            <div class="skill-info">
+              <span>Advanced Excel & Power Query</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-cloud"></i> Cloud & Data Engineering
+        </h3>
+        <div class="skill-items">
+          <div class="skill-item" data-progress="82">
+            <div class="skill-info">
+              <span>AWS (S3, EC2, Lambda, RDS)</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-progress="80">
+            <div class="skill-info">
+              <span>ETL/ELT Pipelines</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-progress="78">
+            <div class="skill-info">
+              <span>Oracle & PostgreSQL</span>
+              <span class="skill-percent">78%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-brain"></i> Machine Learning & Statistics
+        </h3>
+        <div class="skill-items">
+          <div class="skill-item" data-progress="87">
+            <div class="skill-info">
+              <span>Statistical Modeling & Forecasting</span>
+              <span class="skill-percent">87%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-progress="83">
+            <div class="skill-info">
+              <span>Regression & Time-Series Analysis</span>
+              <span class="skill-percent">83%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-progress="80">
+            <div class="skill-info">
+              <span>Predictive Analytics & A/B Testing</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-    <div class="experience-box">
-      <h3>Graduate Student Researcher | Nexus Lab, Syracuse University | Aug 2024 – Present</h3>
-      <ul class="experience-list">
-        <li><span class="icon">🔍</span> <strong>Research :</strong> Predictive analytics & energy demand modeling</li>
-        <li><span class="icon">🛠️</span> <strong>Tools :</strong> Data pipelines, ML models, dashboards for actionable insights</li>
-        <li><span class="icon">📈</span> <strong>Impact :</strong> Improved forecast accuracy & presented findings at academic forums</li>
-        <li><span class="icon">🤝</span> <strong>Collaboration :</strong> Cross-functional KPIs & tools for Sales, Marketing & Finance</li>
-      </ul>
+  <!-- Experience Section with Timeline -->
+  <section id="experience" class="experience">
+    <h2 class="section-title">Professional <span>Journey</span></h2>
+    <div class="timeline">
+      
+      <div class="timeline-item left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Aug 2025 - Present</div>
+          <h3>Teaching Assistant</h3>
+          <h4>Syracuse University, School of Information Studies</h4>
+          <ul class="experience-list">
+            <li><i class="fas fa-check"></i> Facilitating learning for 100+ students in "Essence of Finance"</li>
+            <li><i class="fas fa-check"></i> Guiding financial analysis using Excel and Python</li>
+            <li><i class="fas fa-check"></i> Designing curriculum materials and assessment frameworks</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Excel</span>
+            <span>Python</span>
+            <span>Financial Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Jul 2025 - Aug 2025</div>
+          <h3>Data Engineer Intern</h3>
+          <h4>PeopleLens</h4>
+          <ul class="experience-list">
+            <li><i class="fas fa-check"></i> Built ETL pipelines processing 500K+ records daily</li>
+            <li><i class="fas fa-check"></i> Reduced data processing time by 35%</li>
+            <li><i class="fas fa-check"></i> Crafted RESTful APIs and Tableau dashboards</li>
+            <li><i class="fas fa-check"></i> Improved deal velocity by 15%</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>AWS</span>
+            <span>SQL</span>
+            <span>Tableau</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Oct 2021 - Apr 2024</div>
+          <h3>Business Intelligence Analyst</h3>
+          <h4>Accenture, Pune, India</h4>
+          <ul class="experience-list">
+            <li><i class="fas fa-check"></i> Designed BI solutions for 500+ stakeholders</li>
+            <li><i class="fas fa-check"></i> Built predictive models achieving 99% data integrity</li>
+            <li><i class="fas fa-check"></i> Migrated 65,000+ customer accounts with 99% accuracy</li>
+            <li><i class="fas fa-check"></i> Improved decision-making speed by 30%</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Salesforce</span>
+            <span>Tableau</span>
+            <span>Oracle</span>
+            <span>R</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Aug 2024 - Present</div>
+          <h3>Graduate Student Researcher</h3>
+          <h4>Nexus Lab, Syracuse University</h4>
+          <ul class="experience-list">
+            <li><i class="fas fa-check"></i> Predictive analytics & energy demand modeling</li>
+            <li><i class="fas fa-check"></i> Built ML models and data pipelines</li>
+            <li><i class="fas fa-check"></i> Presented findings at academic forums</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Machine Learning</span>
+            <span>Python</span>
+            <span>Research</span>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
-
+  <!-- Projects Section (Using the enhanced version from before) -->
   <section id="projects" class="projects">
-  <h2 class="heading">My <span>Projects</span></h2>
-  <div class="projects-container">
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+    <div class="projects-container">
+      
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-overlay">
+            <i class="fas fa-bolt"></i>
+          </div>
+        </div>
+        <div class="project-header">
+          <h3>Energy Demand Forecasting</h3>
+          <span class="project-date">Aug 2024 - Dec 2024</span>
+        </div>
+        <div class="project-body">
+          <p>ML-powered forecasting system for electricity demand prediction using weather variables and time-series analysis.</p>
+          <div class="project-metrics">
+            <div class="metric">
+              <i class="fas fa-chart-line"></i>
+              <span>R² 0.89</span>
+            </div>
+            <div class="metric">
+              <i class="fas fa-database"></i>
+              <span>50K+ Records</span>
+            </div>
+            <div class="metric">
+              <i class="fas fa-arrow-down"></i>
+              <span>20% ↓ RMSE</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>R</span>
+            <span>ML</span>
+            <span>Shiny</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="#" class="project-link">View Details</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-overlay">
+            <i class="fas fa-plane"></i>
+          </div>
+        </div>
+        <div class="project-header">
+          <h3>Global Tourism Analytics</h3>
+          <span class="project-date">Feb 2025 - Apr 2025</span>
+        </div>
+        <div class="project-body">
+          <p>Comprehensive analytics platform tracking post-COVID tourism recovery across 50+ countries with interactive visualizations.</p>
+          <div class="project-metrics">
+            <div class="metric">
+              <i class="fas fa-globe"></i>
+              <span>50+ Countries</span>
+            </div>
+            <div class="metric">
+              <i class="fas fa-database"></i>
+              <span>100K+ Records</span>
+            </div>
+            <div class="metric">
+              <i class="fas fa-arrow-up"></i>
+              <span>45% ↑ Bookings</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Tableau</span>
+            <span>SQL</span>
+            <span>EDA</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="#" class="project-link">View Dashboard</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-overlay">
+            <i class="fas fa-gamepad"></i>
+          </div>
+        </div>
+        <div class="project-header">
+          <h3>Game Store System</h3>
+          <span class="project-date">Academic Project</span>
+        </div>
+        <div class="project-body">
+          <p>Database-driven retail management system with optimized ERD design and seamless data flow architecture.</p>
+          <div class="project-metrics">
+            <div class="metric">
+              <i class="fas fa-database"></i>
+              <span>Full ERD</span>
+            </div>
+            <div class="metric">
+              <i class="fas fa-sitemap"></i>
+              <span>DFD Design</span>
+            </div>
+            <div class="metric">
+              <i class="fas fa-user"></i>
+              <span>UX Focused</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span>SQL</span>
+            <span>ERD</span>
+            <span>Database</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <a href="#" class="project-link">View Project</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications Section with Modern Cards -->
+  <section id="certifications" class="certifications">
+    <h2 class="section-title">Certifications & <span>Achievements</span></h2>
     
-    <!-- Project 1: Energy Demand Forecasting -->
-    <div class="project-card">
-      <div class="project-header">
-        <i class="fas fa-bolt project-icon"></i>
-        <h3>Predictive Analytics for Energy Demand Forecasting</h3>
-        <span class="project-date">Aug 2024 - Dec 2024</span>
-      </div>
-      <div class="project-body">
-        <p class="project-description">
-          Developed and deployed machine learning regression models and time-series forecasting algorithms to forecast electricity demand based on weather variables for South Carolina energy provider.
-        </p>
-        <div class="project-achievements">
-          <h4>Key Achievements:</h4>
-          <ul>
-            <li><i class="fas fa-check-circle"></i> Achieved R² score of 0.89 with 20% reduction in prediction error (RMSE)</li>
-            <li><i class="fas fa-check-circle"></i> Analyzed 50K+ historical energy consumption records</li>
-            <li><i class="fas fa-check-circle"></i> Built interactive R Shiny web application with real-time visualizations</li>
-            <li><i class="fas fa-check-circle"></i> Increased user engagement by 10% through intelligent forecasting</li>
-          </ul>
+    <div class="trailblazer-showcase">
+      <div class="trailblazer-card">
+        <img src="trailblazer-img.png" alt="Trailblazer" class="trailblazer-image">
+        <div class="trailblazer-info">
+          <h3>🏆 Salesforce Ranger Status</h3>
+          <div class="trailblazer-stats">
+            <div class="stat">
+              <span class="stat-value">134</span>
+              <span class="stat-label">Badges</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">85,750</span>
+              <span class="stat-label">Points</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">9</span>
+              <span class="stat-label">Trails</span>
+            </div>
+          </div>
+          <a href="https://salesforce.com/trailblazer/aghaytadak" target="_blank" class="btn btn-primary">
+            View Trailblazer Profile
+          </a>
         </div>
-        <div class="project-tech">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">R</span>
-          <span class="tech-tag">scikit-learn</span>
-          <span class="tech-tag">statsmodels</span>
-          <span class="tech-tag">R Shiny</span>
-          <span class="tech-tag">Time-Series Analysis</span>
-        </div>
-      </div>
-      <div class="project-footer">
-        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
-        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
 
-    <!-- Project 2: Tourism Analytics -->
-    <div class="project-card">
-      <div class="project-header">
-        <i class="fas fa-chart-line project-icon"></i>
-        <h3>Global Tourism Data Analytics & Visualization</h3>
-        <span class="project-date">Feb 2025 - Apr 2025</span>
-      </div>
-      <div class="project-body">
-        <p class="project-description">
-          Performed comprehensive data analysis and created interactive dashboards to track post-COVID tourism recovery trends across 50+ countries using multiple data sources.
-        </p>
-        <div class="project-achievements">
-          <h4>Key Achievements:</h4>
-          <ul>
-            <li><i class="fas fa-check-circle"></i> Analyzed 100K+ tourism records from UNWTO, IATA, and hotel datasets</li>
-            <li><i class="fas fa-check-circle"></i> Identified 45% surge in online bookings through cohort analysis</li>
-            <li><i class="fas fa-check-circle"></i> Created dynamic Tableau dashboards with heatmaps and geographic mapping</li>
-            <li><i class="fas fa-check-circle"></i> Delivered data-driven forecasting for hospitality strategic planning</li>
-          </ul>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-badge">
+          <img src="2021-03_Badge_SF-Certified_Administrator_High-Res.png" alt="Administrator">
         </div>
-        <div class="project-tech">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Pandas</span>
-          <span class="tech-tag">SQL</span>
-          <span class="tech-tag">Tableau</span>
-          <span class="tech-tag">Statistical Modeling</span>
-          <span class="tech-tag">Data Visualization</span>
+        <h4>Salesforce Administrator</h4>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">
+          <img src="2021-03_Badge_SF-Certified_Platform-App-Builder_High-Res.png" alt="App Builder">
         </div>
+        <h4>Platform App Builder</h4>
       </div>
-      <div class="project-footer">
-        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
-        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-    <!-- Project 3: Game Store System (from HTML) -->
-    <div class="project-card">
-      <div class="project-header">
-        <i class="fas fa-gamepad project-icon"></i>
-        <h3>Game Store Management System</h3>
-        <span class="project-date">Academic Project</span>
-      </div>
-      <div class="project-body">
-        <p class="project-description">
-          Designed comprehensive database system for retail gaming scenario with focus on user experience optimization and efficient data flow management.
-        </p>
-        <div class="project-achievements">
-          <h4>Key Features:</h4>
-          <ul>
-            <li><i class="fas fa-check-circle"></i> Built Entity Relationship Diagrams (ERD) for database design</li>
-            <li><i class="fas fa-check-circle"></i> Created Data Flow Diagrams (DFDs) for system processes</li>
-            <li><i class="fas fa-check-circle"></i> Developed mock flows to enhance user experience</li>
-            <li><i class="fas fa-check-circle"></i> Implemented retail gaming inventory management</li>
-          </ul>
+      <div class="cert-card">
+        <div class="cert-badge">
+          <img src="2021-03_Badge_SF-Certified_Platform-Developer-I_High-Res.png" alt="Developer">
         </div>
-        <div class="project-tech">
-          <span class="tech-tag">Database Design</span>
-          <span class="tech-tag">ERD</span>
-          <span class="tech-tag">DFD</span>
-          <span class="tech-tag">SQL</span>
-          <span class="tech-tag">System Analysis</span>
+        <h4>Platform Developer I</h4>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">
+          <img src="2022-08_Badge_SF-Certified_Associate_High-Res.png" alt="Associate">
         </div>
+        <h4>Certified Associate</h4>
       </div>
-      <div class="project-footer">
-        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
-        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  <section id="trailblazer">
-    <h2 class="heading">My <span>Trailblazer</span> Journey</h2>
-    <div class="trailblazer-wrapper">
-      <div class="trailblazer-img">
-        <img src="trailblazer-img.png" alt="Trailblazer Profile">
-      </div>
-      <div class="certification-container">
-        <h2>Ranger Status Achieved</h2>
-        <p>134 Badges | 85,750 Points | 9 Trails Completed</p>
-        <a href="https://salesforce.com/trailblazer/aghaytadak" target="_blank">View Trailblazer Profile</a>
+      <div class="cert-card">
+        <div class="cert-badge">
+          <img src="2023-07_Badge_SF-Certified_AI-Associate_High-Res.png" alt="AI Associate">
+        </div>
+        <h4>AI Associate</h4>
       </div>
     </div>
   </section>
-  
-  <style>
-    .trailblazer-wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-      background-color: var(--snd-bg-color);
-      padding: 2rem;
-      border-radius: 1.5rem;
-      box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-    }
-  
-    .trailblazer-img img {
-      max-width: 100%;
-      border-radius: 1rem;
-      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-    }
-  
-    .certification-container {
-      text-align: center;
-      font-size: 1.6rem;
-    }
-  
-    .certification-container a {
-      color: var(--main-color);
-      font-weight: bold;
-      text-decoration: underline;
-    }
-  </style>
 
-<section id="certifications" class="certifications">
-  <h2 class="heading">Salesforce <span>Certifications</span></h2>
-  <div class="cert-container">
-    <div class="cert-box">
-      <img src="2021-03_Badge_SF-Certified_Administrator_High-Res.png">
-      <p>Salesforce Certified Administrator</p>
-    </div>
-    <div class="cert-box">
-      <img src="2021-03_Badge_SF-Certified_Platform-App-Builder_High-Res.png" alt="Platform App Builder">
-      <p>Salesforce Certified Platform App Builder</p>
-    </div>
-    <div class="cert-box">
-      <img src="2021-03_Badge_SF-Certified_Platform-Developer-I_High-Res.png" alt="Platform Developer I">
-      <p>Salesforce Certified Platform Developer I</p>
-    </div>
-    <div class="cert-box">
-      <img src="2022-08_Badge_SF-Certified_Associate_High-Res.png" alt="Certified Associate">
-      <p>Salesforce Certified Associate</p>
-    </div>
-     <div class="cert-box">
-      <img src="2023-07_Badge_SF-Certified_AI-Associate_High-Res.png" alt="Certified AI Associate">
-      <p>Salesforce Certified AI Associate</p>
-    </div>
-  </div>
-</section>
+  <!-- Contact Section with Enhanced Form -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Let's <span>Connect</span></h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>ashishghaytadak@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Syracuse, NY</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>315-952-0520</p>
+            </div>
+          </div>
+        </div>
 
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/ashishghaytadak" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/ashishghaytadak" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:ashishghaytadak@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
 
-<section id="contact" class="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
-  <form name="submit-to-google-sheet">
-    <div class="input-box">
-      <input type="text" name="first-name" placeholder="FullName" required>
-      <input type="text" name="last-name" placeholder="LastName" required>
+      <form name="submit-to-google-sheet" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="first-name" placeholder="First Name" required>
+          <input type="text" name="last-name" placeholder="Last Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="subject" placeholder="Email Address" required>
+          <input type="tel" name="mobile" placeholder="Phone Number" required>
+        </div>
+        <div class="form-group full-width">
+          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn">
+          <span class="btn-text">Send Message</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+        <p id="messageEl" class="form-message"></p>
+      </form>
     </div>
-    <div class="input-box">
-      <input type="text" name="subject" placeholder="Email Subject" required>
-      <input type="tel" name="mobile" placeholder="Mobile Number" required>
-    </div>
-    <div class="input-box">
-      <textarea name="message" placeholder="Your message" required></textarea>
-    </div>
-    <div class="input-box">
-      <button type="submit" class="btn">Send Message</button>
-    </div>
-  </form>
-</section>
+  </section>
 
-
-
+  <!-- Footer -->
   <footer class="footer">
-    <div class="footer-text">
-      <p>&copy; 2025 Ashish Ghaytadak</p>
-    </div>
-    <div class="footer-iconTop">
-      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    <div class="footer-content">
+      <p>&copy; 2025 Ashish Ghaytadak. Crafted with 💙 and ☕</p>
+      <div class="footer-links">
+        <a href="#home">Back to Top</a>
+      </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="enhanced-script.js"></script>
 </body>
 </html>
