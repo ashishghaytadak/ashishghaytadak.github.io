@@ -316,7 +316,7 @@ window.addEventListener('scroll', () => {
     if (currentScroll <= 100) {
         header.style.transform = 'translateY(0)';
         return;
-    }
+    } 
     
     if (currentScroll > lastScroll && !navbar.classList.contains('active')) {
         // Scrolling down
