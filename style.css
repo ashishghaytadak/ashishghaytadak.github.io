@@ -194,9 +194,9 @@ body {
   font-weight: 800;
   line-height: 1.2;
   background: linear-gradient(135deg, #fff 0%, var(--main-color) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   margin-bottom: 1rem;
 }
 
@@ -473,9 +473,9 @@ section {
 
 .section-title span {
   background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .section-title::after {
@@ -1017,6 +1017,7 @@ section {
   font-weight: 700;
   margin-bottom: 2rem;
   background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
