@@ -59,10 +59,10 @@ ScrollReveal().reveal('.trailblazer-card', { origin: 'top' });
 const typed = new Typed(".multiple-text", {
     strings: [
         "Data Analyst",
-        "Salesforce Developer", 
-        "BI Analyst",
-        "Machine Learning Enthusiast",
-        "Problem Solver"
+        "Business Intelligence Analyst", 
+        "Data Engineer",
+        "Salesforce Engineer",
+        "Business Analyst"
     ],
     typeSpeed: 80,
     backSpeed: 80,
