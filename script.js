@@ -36,16 +36,30 @@ window.onscroll = () => {
 };
 
 // Scroll reveal
-ScrollReveal({
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
+ScrollReveal().reveal('.project-card', { 
+  origin: 'bottom',
+  distance: '60px',
+  duration: 1500,
+  delay: 200,
+  interval: 200
 });
+
 
 ScrollReveal().reveal('.hero h2, .hero p, h2', { origin: 'top' });
 ScrollReveal().reveal('.project, form', { origin: 'bottom' });
 ScrollReveal().reveal('.about-img', { origin: 'left' });
 ScrollReveal().reveal('.about-content', { origin: 'right' });
+
+// Optional: Add smooth animations for project cards on hover
+document.addEventListener('DOMContentLoaded', function() {
+  const projectCards = document.querySelectorAll('.project-card');
+  
+  projectCards.forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.style.transition = 'all 0.3s ease';
+    });
+  });
+});
 
 // Typed.js animation
 
