@@ -402,7 +402,7 @@ body {
   box-shadow: 0 0 50px rgba(0, 212, 255, 0.5);
   animation: profileFloat 3s ease-in-out infinite;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 @keyframes profileFloat {
@@ -418,6 +418,7 @@ body {
   border-top-color: var(--main-color);
   border-radius: 50%;
   animation: rotate 4s linear infinite;
+  z-index: 2;
 }
 
 @keyframes rotate {
@@ -432,7 +433,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 4;
 }
 
 .float-icon {
@@ -453,7 +454,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(var(--x), var(--y));
-  z-index: 1;
+  z-index: 4;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes floatIcon {
