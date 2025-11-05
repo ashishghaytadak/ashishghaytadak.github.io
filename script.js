@@ -147,72 +147,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ==================== GOOGLE SHEETS FORM SUBMISSION ====================
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxddeY2G51mDM-Ce3IJ_gquo157rh2TGydb_qYnzNZBgmkeXINa0Y00pK957c2s364P/exec';
-const form = document.forms['submit-to-google-sheet'];
-const messageEl = document.getElementById('messageEl');
 
-if (form) {
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        
-        // Show loading state
-        const submitBtn = form.querySelector('.submit-btn');
-        const btnText = submitBtn.querySelector('.btn-text');
-        const originalText = btnText ? btnText.textContent : 'Send Message';
-        
-        if (btnText) {
-            btnText.textContent = 'Sending...';
-        }
-        submitBtn.style.opacity = '0.7';
-        submitBtn.style.pointerEvents = 'none';
-
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                console.log('Success!', response);
-                if (messageEl) {
-                    messageEl.textContent = "✓ Message sent successfully! I'll get back to you soon.";
-                    messageEl.style.color = "#00d4ff";
-                }
-                form.reset();
-                 
-                // Reset button
-                if (btnText) { 
-                    btnText.textContent = originalText;
-                }
-                submitBtn.style.opacity = '1';
-                submitBtn.style.pointerEvents = 'auto';
-                
-                // Clear message after 5 seconds
-                setTimeout(() => {
-                    if (messageEl) {
-                        messageEl.textContent = "";
-                    }
-                }, 5000);
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
-                if (messageEl) {
-                    messageEl.textContent = "✗ Oops! Something went wrong. Please try again.";
-                    messageEl.style.color = "#ff6b9d";
-                }
-                
-                // Reset button
-                if (btnText) {
-                    btnText.textContent = originalText;
-                }
-                submitBtn.style.opacity = '1';
-                submitBtn.style.pointerEvents = 'auto';
-                
-                // Clear error message after 5 seconds
-                setTimeout(() => {
-                    if (messageEl) {
-                        messageEl.textContent = "";
-                    }
-                }, 5000);
-            });
-    });
-}
 
 // ==================== PARALLAX EFFECT ON SCROLL ====================
 window.addEventListener('scroll', () => {
